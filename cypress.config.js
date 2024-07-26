@@ -24,7 +24,8 @@ module.exports = defineConfig({
     viewportHeight: 720, // Adjusted to a more common default
     defaultCommandTimeout: 10000, // Timeout for commands
     setupNodeEvents,
-    specPattern: "cypress/e2e/**/*.feature", // Adjusted to match all feature files
+    specPattern: "cypress/e2e/*.feature", // Adjusted to match all feature files
+    //stepDefinitions : "cypress/e2e/*.js",
     supportFile: 'cypress/support/e2e.js', // Specify the support file
    // baseUrl: 'http://localhost:3000', // Add the base URL if needed
   },
